@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/vn.techplus.filmon"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_channel"
+    android:padding="3dp" >
+
+    <ImageView
+        android:id="@+id/imgLogoChannel"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFFFF"
+        android:scaleType="fitXY" />
+
+    <vn.techplus.filmon.customwidget.CustomTextView
+        android:id="@+id/txtChannel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgLogoChannel"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_text"
+        android:fadingEdge="horizontal"
+        android:gravity="center"
+        android:padding="5dp"
+        android:shadowColor="#A0000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:singleLine="true"
+        android:text="@string/unknown"
+        android:textColor="@color/text"
+        android:textSize="@dimen/name_channel"
+        custom:customTypeFace="Bank_Gothic_Medium_BT.ttf" />
+
+    <ToggleButton
+        android:id="@+id/toggleMyChannel"
+        android:layout_width="@dimen/btn_fav"
+        android:layout_height="@dimen/btn_fav"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/favorite"
+        android:focusable="false"
+        android:textColor="@android:color/transparent" />
+
+    <ImageView
+        android:id="@+id/imgHD"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/btn_fav"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_hd" />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item_combobox"
+    android:dividerHeight="1dp"
+    android:divider="@drawable/bg_list_combobox"
+    android:cacheColorHint="@android:color/transparent" >
+
+</ListView>

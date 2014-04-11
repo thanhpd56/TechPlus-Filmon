@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/vn.techplus.filmon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_splash" >
+
+    <ImageView
+        android:id="@+id/img_light_under"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/img_light_under" />
+   
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/img_light_under"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_filmon" />
+
+    
+
+    <vn.techplus.filmon.customwidget.CustomTextView
+        android:id="@id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:maxLines="2"
+        android:paddingTop="5dp"
+        android:text="@string/lb_instroduction"
+        android:textColor="#62656E"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        custom:customTypeFace="Bank_Gothic_Medium_BT.ttf" />
+
+    <LinearLayout
+        android:id="@+id/progressView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/txt"
+        android:layout_below="@+id/imgLogo"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <vn.techplus.filmon.customwidget.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Loading ..."
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/name_channel"
+            android:textStyle="bold"
+            custom:customTypeFace="Bank_Gothic_Medium_BT.ttf" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        android:background="@color/bg_topbar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textColor="@android:color/black"
+            android:imeOptions="actionSearch"
+            android:background="@drawable/bg_edit_text"
+            android:hint="@string/hint_search_channel"
+            android:singleLine="true"
+            android:gravity="center"
+            android:inputType="text" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/btnSearch"
+            android:layout_width="@dimen/btn_topbar_height"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/search_selector" />
+        
+    </LinearLayout>
+
+    <include layout="@layout/channel_grid" />
+
+</LinearLayout>

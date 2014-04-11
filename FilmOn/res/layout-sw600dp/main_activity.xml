@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/vn.techplus.filmon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/left_menu"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        layout="@layout/category_list" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/left_menu"
+        android:background="@color/bg_list_tv"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/topbar_height"
+            android:background="@color/bg_topbar"
+            android:gravity="center_vertical" >
+
+            <com.viewpagerindicator.CirclePageIndicator
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/viewIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="2dp"
+                app:fillColor="#BBFFFFFF"
+                app:pageColor="#88555555"
+                app:radius="5dp"
+                app:strokeColor="#60FFFFFF"
+                app:strokeWidth="0px" />
+
+            <vn.techplus.filmon.customwidget.CustomTextView
+                android:id="@+id/txtNameCategory"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/topbar_height"
+                android:layout_toLeftOf="@+id/btnAbout"
+                android:singleLine="true"
+                android:fadingEdge="horizontal"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="@string/app_name"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                custom:customTypeFace="Bank_Gothic_Medium_BT.ttf" />
+
+            <ImageView
+                android:id="@+id/btnAbout"
+                android:layout_width="@dimen/topbar_height"
+                android:layout_height="@dimen/topbar_height"
+                android:layout_alignParentRight="true"
+                android:padding="20dp"
+                android:src="@drawable/about" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_divide_topbar_content"
+            android:background="@android:color/white" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_list_tv" />
+    </LinearLayout>
+
+    <com.google.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="IAB_BANNER"
+        ads:adUnitId="@string/AD_UNIT_ID"
+        ads:loadAdOnCreate="true"
+        android:alpha="0.5" />
+
+</RelativeLayout>

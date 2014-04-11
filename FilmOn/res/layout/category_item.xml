@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/vn.techplus.filmon"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_list_seletor_2"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp" >
+
+    <ImageView
+        android:id="@+id/imgCategory"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="5dp"
+        android:scaleType="fitXY" />
+
+    <vn.techplus.filmon.customwidget.CustomTextView
+        android:id="@+id/txtCategoryItem"
+        style="@style/TextViewMenu"
+        android:layout_width="match_parent"
+        custom:customTypeFace="Gillsans.ttf"
+        android:maxLines="2" >
+    </vn.techplus.filmon.customwidget.CustomTextView>
+
+</LinearLayout>

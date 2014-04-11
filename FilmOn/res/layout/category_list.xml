@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/vn.techplus.filmon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_menu"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        android:background="@color/bg_topbar_menu"
+        android:padding="@dimen/padding_small_logo"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_fmedia_small" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_divide_topbar_content"
+        android:layout_below="@+id/imgLogo"
+        android:background="@android:color/white" />
+
+   <!--  <vn.techplus.filmon.customwidget.CustomTextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:background="@color/bg_item_menu_pressed"
+        android:gravity="center_vertical|left"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:text="@string/menu_title_category"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        custom:customTypeFace="Gillsans.ttf" /> -->
+
+    <ListView
+        android:id="@+id/listCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/line"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/line_devide_menu"
+        android:dividerHeight="1px"
+        android:listSelector="@drawable/item_list_seletor_2"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp" >
+    </ListView>
+
+    <!--
+         <ImageView
+        android:id="@+id/btnSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:src="@drawable/setting_selector" />
+    -->
+
+</RelativeLayout>

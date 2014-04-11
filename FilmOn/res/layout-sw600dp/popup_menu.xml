@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/vn.techplus.filmon"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/popup_list_height"
+    android:background="@color/bg_popup_menu"
+    android:orientation="vertical"
+    android:focusable="true" >
+
+    <vn.techplus.filmon.customwidget.CustomTextView
+        android:id="@+id/menuCMSServer"
+        style="@style/TextViewMenu"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:text="@string/menu_cms_server"
+        android:textColor="@android:color/black"
+        custom:customTypeFace="Gillsans.ttf"
+        android:focusable="true" />
+
+    <ImageView style="@style/ImageViewDivide" />
+
+    <vn.techplus.filmon.customwidget.CustomTextView
+        android:id="@+id/menuDeviceSN"
+        style="@style/TextViewMenu"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:text="@string/menu_device_sn"
+        android:textColor="@android:color/black"
+        custom:customTypeFace="Gillsans.ttf"
+        android:focusable="true" />
+
+    <ImageView style="@style/ImageViewDivide" />
+
+    <vn.techplus.filmon.customwidget.CustomTextView
+        android:id="@+id/menuTerm"
+        style="@style/TextViewMenu"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:text="@string/menu_term"
+        android:textColor="@android:color/black"
+        custom:customTypeFace="Gillsans.ttf"
+        android:focusable="true" />
+
+    <ImageView style="@style/ImageViewDivide" />
+
+    <vn.techplus.filmon.customwidget.CustomTextView
+        android:id="@+id/menuAbout"
+        style="@style/TextViewMenu"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:text="@string/menu_about"
+        android:textColor="@android:color/black"
+        custom:customTypeFace="Gillsans.ttf"
+        android:focusable="true" />
+
+</LinearLayout>

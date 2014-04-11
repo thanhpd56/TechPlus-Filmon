@@ -1,0 +1,42 @@
+[
+	{
+		"name":"Pentagon CH",
+		"logo":"",
+		"stream":"rtmp://cp114761.live.edgefcs.net:443/live/tpc-live_1@44263"
+	},
+	{
+		"name":"Wrestling @US Sports",
+		"logo":"",
+		"stream":"rtmp://80.93.53.88:1935/live/wrestling.stream"
+	},
+	{
+		"name":"WWE @US Sports",
+		"logo":"",
+		"stream":"rtmp://fmsnl.ilive.to:1935/app/_definst_/17qm6kmcv8un5it"
+	},
+	{
+		"name":"SportsTV @EU Sports",
+		"logo":"",
+		"stream":"rtmp://stream.sportstv.com.tr/sportstv/SportsTV3"
+	},
+	{
+		"name":"Real Madrid @EU Sports",
+		"logo":"",
+		"stream":"http://rmtv1live.realmadrid.com/streams/rmtv1ipad/rmtv1ipad.m3u8"
+	},
+	{
+		"name":"TonightLive @EU Sports",
+		"logo":"",
+		"stream":"rtmp://freeview.fms.visionip.tv:1935/live/sports_tonight-sports_tonight-live-25f-16x9-HD"
+	},
+	{
+		"name":"Eurosport @EU Sports",
+		"logo":"",
+		"stream":"rtmp://178.22.217.150/tv/live/5.sdp"
+	},
+	{
+		"name":"Tru @US Sports",
+		"logo":"",
+		"stream":"rtmp://llnwvps348.fc.llnwd.net:1935/llnwvps348/Hmv0CG7hRxokmH9xKend38_ghJ73vaoSgAhHoGi7IZ_uk_640_360_696"
+	}
+]

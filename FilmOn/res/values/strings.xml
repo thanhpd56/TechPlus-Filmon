@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FilmOn</string>
+    <string name="action_settings">Settings</string>
+    <string name="unknown">\?\?\?</string>
+    <string name="model">1</string>
+    <string name="share_title">Share TV Guide</string>
+    <string name="share_text"> \?\?\? </string>
+    <string name="dialog_share_app">Choose app share</string>
+    <string name="lb_instroduction">COPYRIGHT 2013 FILMON USA FREE TV CONTENT SYSTEM PLC \nALL RIGHT RESERVED</string>
+    <string name="lb_slogan">IPTV CONTENT PROVIDER</string>
+    <string name="my_category">MY CHANNELS</string>
+    <string name="special_category">SPECIAL CHANNELS</string>
+
+    <!-- category name topbar -->
+    <string name="cat_topbar_filmon">Film On</string>
+    <string name="cat_topbar_movie">Movie</string>
+    <string name="cat_topbar_blueTv">BlueTv</string>
+    <string name="cat_topbar_mComming">M-Comming</string>
+
+    <!-- AD_UNIT_ID -->
+    <string name="AD_UNIT_ID">a152d7a7c983a9c@@@</string>
+
+    <!-- AdBuddiz_ID -->
+    <!-- <string name="ADBUDDIZ_PUBLISHER_KEY">c72b43aa-8cde-4022-82aa-e0f5b903f1fe</string> -->
+
+
+    <!-- content main menu -->
+    <string name="menu_title_category">CATEGORIES</string>
+    <string name="menu_cms_server">CMS server</string>
+    <string name="menu_device_sn">DeviceSN</string>
+    <string name="menu_term">Term of use</string>
+    <string name="menu_about">About us!</string>
+    <string name="deviceSN">SN: </string>
+    <string name="hint_edit_cms">Please enter CMS server</string>
+    <string name="hint_search_channel">Please enter name channel</string>
+    <string name="msg_empty_cms">Please enter CMS server in text box!</string>
+    <string name="msg_reset_cms">Please enter other CMS server in text box!</string>
+    <string name="msg_load_data_fail">Not connect to server!!!</string>
+    <string name="msg_faild_found_channel">Not found this channel!</string>
+
+    <!-- label for button -->
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_close">Close</string>
+    <string name="btn_retry">Tap here to retry</string>
+
+</resources>

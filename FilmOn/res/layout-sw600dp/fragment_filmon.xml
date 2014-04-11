@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/listCategories"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/line_devide_menu"
+        android:dividerHeight="1px"
+        android:listSelector="@drawable/item_list_seletor_2"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@color/bg_menu"
+        android:paddingTop="2dp" >
+    </ListView>
+
+    <android.support.v4.view.ViewPager
+        android:layout_toRightOf="@+id/listCategories"
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_list_tv" />
+
+</RelativeLayout>

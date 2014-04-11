@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/vn.techplus.filmon"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AA000000"
+    android:paddingBottom="50dp"
+    android:paddingLeft="150dp"
+    android:paddingRight="150dp"
+    android:paddingTop="50dp" >
+
+    <vn.techplus.filmon.customwidget.CustomTextView
+        android:id="@+id/txtTitleMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="@string/unknown"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        custom:customTypeFace="Gillsans_bold.ttf" />
+
+    <LinearLayout
+        android:id="@+id/desArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/txtTitleMovie"
+        android:layout_centerHorizontal="true"
+        android:background="#000000"
+        android:orientation="vertical"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:focusable="true" >
+
+            <ImageView
+                android:id="@+id/btnTrailer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_trailer_player" />
+
+            <ImageView
+                android:id="@id/btnTrailer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:src="@drawable/ic_trailer" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_weight="1"
+            android:background="#E0000000" >
+
+            <ImageView
+                android:id="@+id/imgPoster"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_channel_default" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imgPoster" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <vn.techplus.filmon.customwidget.CustomTextView
+                        android:id="@+id/txtOverview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fadingEdge="horizontal"
+                        android:maxLines="4"
+                        android:text="@string/unknown"
+                        android:textSize="20sp"
+                        custom:customTypeFace="Gillsans_bold.ttf"
+                        android:padding="2dp" />
+
+                    <vn.techplus.filmon.customwidget.CustomTextView
+                        android:padding="2dp"
+                        android:id="@+id/txtDirector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/unknown"
+                        android:textSize="16sp"
+                        custom:customTypeFace="Gillsans_bold.ttf" />
+
+                    <vn.techplus.filmon.customwidget.CustomTextView
+                        android:padding="2dp"
+                        android:id="@+id/txtCast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="3"
+                        android:text="@string/unknown"
+                        android:textSize="16sp"
+                        custom:customTypeFace="Gillsans_bold.ttf" />
+
+                    <vn.techplus.filmon.customwidget.CustomTextView
+                        android:padding="2dp"
+                        android:id="@+id/txtReleaseDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/unknown"
+                        android:textSize="16sp"
+                        custom:customTypeFace="Gillsans_bold.ttf" />
+
+                    <vn.techplus.filmon.customwidget.CustomTextView
+                        android:padding="2dp"
+                        android:id="@+id/txtImdbVote"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/unknown"
+                        android:textSize="16sp"
+                        custom:customTypeFace="Gillsans_bold.ttf" />
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

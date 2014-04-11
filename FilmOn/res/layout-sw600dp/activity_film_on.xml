@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/vn.techplus.filmon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        android:background="@color/bg_topbar_menu"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/left_topbar"
+            android:layout_width="300dp"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/topbar_height"
+                android:padding="@dimen/padding_small_logo"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo_fmedia_small" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/right_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:id="@+id/right_topbar_categories"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/margin_cat_topbar"
+                android:layout_toLeftOf="@+id/btnAbout"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.viewpagerindicator.TabPageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/StyledIndicators" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btnAbout"
+                android:layout_width="@dimen/topbar_height"
+                android:layout_height="@dimen/topbar_height"
+                android:layout_alignParentRight="true"
+                android:padding="12dp"
+                android:src="@drawable/about" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/line_divide_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_divide_topbar_content"
+        android:layout_below="@+id/topbar"
+        android:background="@android:color/white" />
+
+    <vn.techplus.filmon.customwidget.CustomViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line_divide_topbar" />
+
+    <com.google.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="IAB_BANNER"
+        ads:adUnitId="@string/AD_UNIT_ID"
+        ads:loadAdOnCreate="true"
+        android:alpha="0.5" />
+
+</RelativeLayout>

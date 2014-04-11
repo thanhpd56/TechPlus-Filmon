@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_topbar">#9F130B</color>
+    <color name="bg_text">#55000000</color>
+    <color name="bg_list">#B2B2B2</color>
+    <color name="bg_item_menu_unpressed">#00FFFFFF</color>
+    <color name="bg_item_menu_pressed">#50101010</color>
+    <color name="bg_topbar_menu">#9F130B</color>
+    <color name="bg_menu">#464748</color> 
+    <color name="bg_popup_menu">#F0F0F0</color>
+    <color name="bg_splash">#22252E</color>
+    <color name="line_devide_menu">#737476</color>   
+    
+    <color name="text">#F0F0F0</color>
+    <color name="bg_black">#26222C</color>    
+    <color name="bg_list_tv">#26222C</color>
+    
+    <color name="dark_orange">#D0FF9D00</color>
+    <color name="lawn_green">#D07CFC00</color>
+    <color name="simple_selected">#20FFFFFF</color>
+    
+    <!-- color_text_tab_indicator -->
+    <color name="txt_selected">#00000000</color>
+    <color name="txt_unselected">#FFFFFFFF</color>
+    
+</resources>

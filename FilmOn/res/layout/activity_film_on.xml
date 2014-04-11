@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        android:background="@color/bg_topbar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ToggleButton
+            android:id="@+id/btnMenu"
+            android:layout_width="@dimen/btn_topbar_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/menu_padding"
+            android:padding="5dp"
+            android:textOff=""
+            android:textOn="" />
+
+        <vn.techplus.filmon.customwidget.CustomTextView
+            xmlns:custom="http://schemas.android.com/apk/res/vn.techplus.filmon"
+            android:id="@+id/txtNameCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btnMenu"
+            android:singleLine="true"
+            android:fadingEdge="horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:layout_toLeftOf="@+id/btnSearch"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            custom:customTypeFace="Bank_Gothic_Medium_BT.ttf"
+            android:focusable="true" >
+            
+            <requestFocus />
+        </vn.techplus.filmon.customwidget.CustomTextView>
+        
+        <!--
+             <RelativeLayout
+            android:id="@+id/emptyView"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+        -->
+
+        <ImageView
+            android:id="@+id/btnAbout"
+            android:layout_width="@dimen/btn_topbar_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:src="@drawable/about" />
+
+        <ImageView
+            android:id="@+id/btnSearch"
+            android:layout_width="@dimen/btn_topbar_height"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/btnAbout"
+            android:padding="10dp"
+            android:src="@drawable/search_selector" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_divide_topbar_content"
+        android:background="@android:color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_list_tv" />
+
+        <!--
+             <com.viewpagerindicator.CirclePageIndicator
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/viewIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F0F0F0"
+            android:padding="2dp"
+            app:fillColor="#88FF0000"
+            app:pageColor="#00FF0000"
+            app:radius="3dp"
+            app:strokeColor="#60000000"
+            app:strokeWidth="1px" />
+        -->
+
+        <com.google.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/AD_UNIT_ID"
+            ads:loadAdOnCreate="true"
+            android:alpha="0.5" />
+    </RelativeLayout>
+
+</LinearLayout>

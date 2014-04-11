@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/vn.techplus.filmon"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_channel"
+    android:padding="3dp" >
+
+    <ImageView
+        android:id="@+id/posterMovie"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_row_grid"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFFFF"
+        android:scaleType="fitXY" />
+
+    <vn.techplus.filmon.customwidget.CustomTextView
+        android:id="@+id/titleMovie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/posterMovie"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_text"
+        android:fadingEdge="horizontal"
+        android:gravity="center"
+        android:padding="5dp"
+        android:shadowColor="#A0000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textColor="@color/text"
+        android:textSize="@dimen/name_channel"
+        custom:customTypeFace="Bank_Gothic_Medium_BT.ttf" />
+
+</RelativeLayout>

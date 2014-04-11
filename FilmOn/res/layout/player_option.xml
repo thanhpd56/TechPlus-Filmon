@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/playerOption"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="2dp" >
+
+    <RadioGroup
+        android:id="@+id/radioGroupQuality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            style="@style/TextRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:padding="1dp"
+            android:text="HD" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            style="@style/TextRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:text="SD"
+            android:layout_marginLeft="10dp" />
+    </RadioGroup>
+
+    <ToggleButton
+        android:id="@id/toggleMyChannel"
+        android:layout_width="@dimen/btn_fav2"
+        android:layout_height="@dimen/btn_fav2"
+        android:alpha="0.6"
+        android:background="@drawable/favorite"
+        android:textColor="@android:color/transparent"
+        android:layout_margin="10dp" />
+
+</LinearLayout>

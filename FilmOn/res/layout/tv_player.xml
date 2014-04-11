@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/videoLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <io.vov.vitamio.widget.CenterLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@android:color/background_dark"
+        android:orientation="vertical" >
+
+        <SurfaceView
+            android:id="@+id/surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" >
+        </SurfaceView>
+    </io.vov.vitamio.widget.CenterLayout>
+
+    <LinearLayout
+        android:id="@+id/mediaControlLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center" >
+
+        <ToggleButton
+            android:id="@+id/playtogglebutton"
+            android:layout_width="@dimen/btn_player"
+            android:layout_height="@dimen/btn_player"
+            android:background="@drawable/play_pause_selector"
+            android:textColor="@android:color/transparent"
+            android:visibility="visible" />
+
+        <!--
+             <ToggleButton
+            android:id="@+id/listChannelstogglebutton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="7dp"
+            android:textOff=""
+            android:textOn="" />
+        -->
+
+
+        <!--
+             <ToggleButton
+            android:id="@+id/resizeToggleButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/toggle_resize"
+            android:textColor="@android:color/transparent" />
+        -->
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="@dimen/logo_width"
+        android:layout_height="@dimen/logo_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.8"
+        android:padding="2dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_in_player" />
+
+    <ListView
+        android:id="@+id/listChannels"
+        android:layout_width="@dimen/list_channel_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imgLogo"
+        android:background="@drawable/bg_left_list"
+        android:cacheColorHint="@android:color/transparent"
+        android:choiceMode="singleChoice" >
+    </ListView>
+
+    <!--
+         <com.google.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="IAB_BANNER"
+        ads:adUnitId="@string/AD_UNIT_ID"
+        ads:loadAdOnCreate="true"
+        android:alpha="0.5" />
+    -->
+
+
+    <!--
+         <ToggleButton
+        android:id="@id/toggleMyChannel"
+        android:layout_width="@dimen/btn_fav2"
+        android:layout_height="@dimen/btn_fav2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@android:color/transparent"
+        android:background="@drawable/favorite"
+        android:alpha="0.6" />
+    -->
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mediaControlLayout"
+        layout="@layout/player_option" />
+
+</RelativeLayout>
