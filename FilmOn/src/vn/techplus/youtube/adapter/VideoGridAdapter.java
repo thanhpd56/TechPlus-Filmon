@@ -20,6 +20,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
+import com.bumptech.glide.Glide;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
@@ -27,7 +28,9 @@ public class VideoGridAdapter extends ArrayAdapter<YoutubeVideo> {
 
 	Context context;
 	int layoutResourceId;
-	ArrayList<YoutubeVideo> arrItem = new ArrayList<YoutubeVideo>();
+	ArrayList<YoutubeVideo> arrVideos = new ArrayList<YoutubeVideo>();
+	//private ImageLoader mImageLoader;
+	//private DisplayImageOptions mOptions;
 
 	public VideoGridAdapter(Context context, int resource,
 			ArrayList<YoutubeVideo> objects) {
@@ -35,7 +38,9 @@ public class VideoGridAdapter extends ArrayAdapter<YoutubeVideo> {
 		// TODO Auto-generated constructor stub
 		this.context = context;
 		this.layoutResourceId = resource;
-		this.arrItem = objects;
+		this.arrVideos = objects;
+		//mImageLoader = ImageLoader.getInstance();
+		//mOptions = FilmOnApplication.getDisplayOption(R.drawable.ic_channel_default);
 	}
 
 	@Override
@@ -46,19 +51,18 @@ public class VideoGridAdapter extends ArrayAdapter<YoutubeVideo> {
 		if (row == null) {
 			holder = new RecordHolder();
 			LayoutInflater inflater = ((Activity) context).getLayoutInflater();
-			row = inflater.inflate(layoutResourceId, parent, false);
-			holder.txtTitle = (TextView) row.findViewById(R.id.txtChannel);
-			holder.imageItem = (ImageView) row.findViewById(R.id.imgLogoChannel);
+			row = inflater.inflate(R.layout.video_item, null);
+			holder.txtTitle = (TextView) row.findViewById(R.id.txtVideo);
+			holder.imageItem = (ImageView) row.findViewById(R.id.imgLogoVideo);
 			row.setTag(holder);
 		} else {
 			holder = (RecordHolder) row.getTag();
 		}
-		YoutubeVideo item = arrItem.get(position);
-		holder.txtTitle.setText(item.getTitle() + "");
-		String image_url = item.getImageThumb();
-		//Glide.load(image_url).centerCrop().into(holder.imageItem);
-		// holder.imageItem.setImageBitmap(item.getImage());
-		return row;
+		YoutubeVideo item = arrVideos.get(position);
+		holder.txtTitle.setText(item.getTitle());
+		//mImageLoader.displayImage(item.getImageThumb(), holder.imageItem, mOptions);
+		Glide.load(item.getImageThumb()).into(holder.imageItem);
+		return row; 
 	}
 
 	static class RecordHolder {

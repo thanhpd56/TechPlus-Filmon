@@ -93,7 +93,7 @@ public class SplashActivity extends Activity implements OnUpdateFinished {
 	public void loadData() {
 		findViewById(R.id.progressView).setVisibility(View.VISIBLE);
 		mIsProgressing = true;
-		ChannelManagement.getInstance().reloadChannels(getApplicationContext(), this);
+		ChannelManagement.getInstance().loadChannels(getApplicationContext(), this);
 				
 		Handler handler = new Handler();
 		handler.postDelayed(new Runnable() {

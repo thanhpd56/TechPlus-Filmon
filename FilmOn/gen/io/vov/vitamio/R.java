@@ -9,32 +9,32 @@ package io.vov.vitamio;
 public final class R {
 	public static final class drawable {
 		public static final int ic_launcher = 0x7f020022;
-		public static final int mediacontroller_bg = 0x7f020036;
-		public static final int mediacontroller_pause01 = 0x7f020037;
-		public static final int mediacontroller_pause02 = 0x7f020038;
-		public static final int mediacontroller_pause_button = 0x7f020039;
-		public static final int mediacontroller_play01 = 0x7f02003a;
-		public static final int mediacontroller_play02 = 0x7f02003b;
-		public static final int mediacontroller_play_button = 0x7f02003c;
-		public static final int scrubber_control_disabled_holo = 0x7f020043;
-		public static final int scrubber_control_focused_holo = 0x7f020044;
-		public static final int scrubber_control_normal_holo = 0x7f020045;
-		public static final int scrubber_control_pressed_holo = 0x7f020046;
-		public static final int scrubber_control_selector_holo = 0x7f020047;
-		public static final int scrubber_primary_holo = 0x7f020048;
-		public static final int scrubber_progress_horizontal_holo_dark = 0x7f020049;
-		public static final int scrubber_secondary_holo = 0x7f02004a;
-		public static final int scrubber_track_holo_dark = 0x7f02004b;
+		public static final int mediacontroller_bg = 0x7f02003b;
+		public static final int mediacontroller_pause01 = 0x7f02003c;
+		public static final int mediacontroller_pause02 = 0x7f02003d;
+		public static final int mediacontroller_pause_button = 0x7f02003e;
+		public static final int mediacontroller_play01 = 0x7f02003f;
+		public static final int mediacontroller_play02 = 0x7f020040;
+		public static final int mediacontroller_play_button = 0x7f020041;
+		public static final int scrubber_control_disabled_holo = 0x7f020048;
+		public static final int scrubber_control_focused_holo = 0x7f020049;
+		public static final int scrubber_control_normal_holo = 0x7f02004a;
+		public static final int scrubber_control_pressed_holo = 0x7f02004b;
+		public static final int scrubber_control_selector_holo = 0x7f02004c;
+		public static final int scrubber_primary_holo = 0x7f02004d;
+		public static final int scrubber_progress_horizontal_holo_dark = 0x7f02004e;
+		public static final int scrubber_secondary_holo = 0x7f02004f;
+		public static final int scrubber_track_holo_dark = 0x7f020050;
 	}
 	public static final class id {
-		public static final int mediacontroller_file_name = 0x7f080033;
-		public static final int mediacontroller_play_pause = 0x7f08002f;
-		public static final int mediacontroller_seekbar = 0x7f080032;
-		public static final int mediacontroller_time_current = 0x7f080030;
-		public static final int mediacontroller_time_total = 0x7f080031;
+		public static final int mediacontroller_file_name = 0x7f080041;
+		public static final int mediacontroller_play_pause = 0x7f08003d;
+		public static final int mediacontroller_seekbar = 0x7f080040;
+		public static final int mediacontroller_time_current = 0x7f08003e;
+		public static final int mediacontroller_time_total = 0x7f08003f;
 	}
 	public static final class layout {
-		public static final int mediacontroller = 0x7f030011;
+		public static final int mediacontroller = 0x7f030014;
 	}
 	public static final class raw {
 		public static final int libarm = 0x7f050000;

@@ -20,8 +20,8 @@
     </ListView>
 
     <android.support.v4.view.ViewPager
-        android:layout_toRightOf="@+id/vpVideos"
         android:id="@+id/vpVideos"
+        android:layout_toRightOf="@+id/lvCats"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/bg_list_tv" />

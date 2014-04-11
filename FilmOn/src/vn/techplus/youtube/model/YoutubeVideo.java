@@ -3,7 +3,9 @@ package vn.techplus.youtube.model;
 public class YoutubeVideo {
 	private int id;
 	private String title;
+	private String videoId;
 	private String image_thumb;
+	
 	
 	// setter
 	public void setId(int id){
@@ -15,6 +17,9 @@ public class YoutubeVideo {
 	public void setImageThumb(String img_thumb){
 		this.image_thumb = img_thumb;
 	}
+	public void setVideoId(String videoId){
+		this.videoId = videoId;
+	}
 	
 	// getter
 	public int getId(){
@@ -23,7 +28,11 @@ public class YoutubeVideo {
 	public String getTitle(){
 		return this.title;
 	}
+	public String getVideoId(){
+		return this.videoId;
+	}
 	public String getImageThumb(){
 		return this.image_thumb;
 	}
+	
 }

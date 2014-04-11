@@ -4,7 +4,12 @@ public class YoutubeCategory {
 	private int id;
 	private String name;
 	private int parentId;
-	
+	public YoutubeCategory(){}
+	public YoutubeCategory(int id, String name, int parent){
+		this.id = id;
+		this.name = name;
+		this.parentId = parent;
+	}
 	// getters
 	public int getId(){
 		return this.id;

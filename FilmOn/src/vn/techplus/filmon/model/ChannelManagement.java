@@ -20,6 +20,7 @@ public class ChannelManagement extends Observable {
 	public interface OnUpdateFinished {
 		public void onFinished(boolean isSuccessful);
 	}
+	
 		
 	public static final String MY_CATEGORY_ID = "-1";	
 		
@@ -69,7 +70,7 @@ public class ChannelManagement extends Observable {
 	 * @param context
 	 * @param updateFinishedListener
 	 */
-	public void reloadChannels(Context context, OnUpdateFinished updateFinishedListener) {
+	public void loadChannels(Context context, OnUpdateFinished updateFinishedListener) {
 		mOnUpdateFinished = updateFinishedListener;
 		new AsyncLoadData(context).execute();
 	}

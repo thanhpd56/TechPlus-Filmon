@@ -69,6 +69,7 @@ public class FilmOnFragment extends Fragment implements OnClickListener,
 		mListCategories.setAdapter(mCategoriesAdapter);
 		if (mCategories.size() > 0) {
 			if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
+				
 				mListCategories.setActivated(true);
 			mListCategories.setSelected(true);
 			mListCategories.setSelection(0);
